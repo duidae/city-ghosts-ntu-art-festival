@@ -12,7 +12,7 @@ const GeminiSection: React.FC = () => {
     setError(null);
     setPoem('');
     try {
-      const result = await generateGhostFishPoem();
+      const result = 'test'; // await generateGhostFishPoem();
       if (result.startsWith('Failed') || result.startsWith('API Key')) {
           setError(result);
       } else {
